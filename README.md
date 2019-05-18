@@ -5,6 +5,7 @@
 ## Anotações
 - Variaveis e metodos em c# são privite por padrão...
 - O Acesso a variaveis e metodos se dá com o "." (Ponto)
+- o "this" é oculto... Ex.. Ao usar **transform** equivale a usar **this.transform**
 - Variaveis do mesmo tipo podem ser declaradas separadas com ","...
 - Varivaveis staticas são acessadas atráves do nome da classe ponto variaval EX:
 ```c#
@@ -28,34 +29,32 @@ Script.number;
 
 ----
 ## Metodos da class MonoBehaviour
-```c#
-void Start() {} 
-// Executado apenas uma vez no inicio do programa
+- **Awake**  <br>
+> Executa antes do carregamento da cena
+- **Start**  <br>
+> Executado apenas uma vez no inicio do cena, junto ao primeiro frame
+- **Update**  <br>
+> Executado em todos os frames; Para Nomalizar usa-se Time.deltaTime
+- **FixedUpdate** <br>
+> ...
+- **OnTriggerEnter**  <br>
+> Executado quanto entra em contato com algum colisor; <br>
+> Para funcionar o colizor deve estar com a opção "IsTrigger" marcada
+- **OnGUI** <br>
+> Criar botões na tela ????
 
-void Update() {} 
-// Executado em todos os frames
-
-void OnTriggerEnter() {} 
-// Executado quanto entra em contato com algum colisor
-// Para funcionar o colizor deve estar com a opção "IsTrigger" marcada
-
-void OnGUI(){}
-// Criar botões na tela ????
-
-```
 ----
 ## Components(class) da Unity...
-
 - **Camera** cria uma instancia de uma camera
 - **GameObject** Objeto agrupador da unity;
 
 
 ----
 ## Funções
-
-### GetComponent;
-> Usa-se para cunseguir uma instacia de um componente do na scena...???
+- **GetComponent** Usa-se para cunseguir uma instacia de um componente do na scena...???
 ```c#
 Camera cam = GetComponent<Camera>();
 ```
+- **Time.deltaTime** retorna um delta relativo aos frames...
+
 ----
