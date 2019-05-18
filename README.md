@@ -2,6 +2,31 @@
 > Resumo das aulas de unity <br>
 > Curso ["UNITY 5 - Aprenda C#" Marcos Schultz](https://www.youtube.com/playlist?list=PL0TaCOFAHoO-Wpq6FuN9gwr7WAdPEKUnh)
 
+## Anotações
+- Variaveis e metodos em c# são privite por padrão...
+- O Acesso a variaveis e metodos se dá com o "." (Ponto)
+- Variaveis do mesmo tipo podem ser declaradas separadas com ","...
+- Varivaveis staticas são acessadas atráves do nome da classe ponto variaval EX:
+```c#
+public class Script {
+    public static int number;
+}
+Script.number;
+```
+----
+
+## Tipos de váriaveis 
+> O c# é tipado... aff <br>
+> Variaveis publicas aparecem no inspect... <br>
+> Objetos e classes podem ser usados como tipo de obj...
+
+- **int** numeros inteiros... Ex:. 0,1,2,3...
+- **float** Numeros com ponto com até 7 casas decimais terminados com "f" Ex:. 1.55f, 54.456544f...
+- **double** Numero com ponto com até 16 cadas decimais
+- **string** Variavel literal... Ex:. "Ola mundo", "Seja bem vindo"
+
+
+----
 ## Metodos da class MonoBehaviour
 ```c#
 void Start() {} 
@@ -20,8 +45,11 @@ void OnGUI(){}
 ```
 ----
 ## Components(class) da Unity...
-### Camera
-> Cria uma instancia de uma camera
+
+- **Camera** cria uma instancia de uma camera
+- **GameObject** Objeto agrupador da unity;
+
+
 ----
 ## Funções
 
@@ -31,4 +59,3 @@ void OnGUI(){}
 Camera cam = GetComponent<Camera>();
 ```
 ----
-
