@@ -29,18 +29,18 @@ Script.number;
 
 ----
 ## Metodos da class MonoBehaviour
-- **Awake**
-> Executa antes do carregamento da cena
-- **Start**  <br>
+- **Awake** <br>
+  Executa antes do carregamento da cena
+- **Start**  
 > Executado apenas uma vez no inicio do cena, junto ao primeiro frame
-- **Update**  <br>
+- **Update**  
 > Executado em todos os frames; Para Nomalizar usa-se Time.deltaTime
-- **FixedUpdate** <br>
+- **FixedUpdate** 
 > ...
-- **OnTriggerEnter**  <br>
+- **OnTriggerEnter**  
 > Executado quanto entra em contato com algum colisor; <br>
 > Para funcionar o colizor deve estar com a opção "IsTrigger" marcada
-- **OnGUI** <br>
+- **OnGUI** 
 > Criar botões na tela ????
 
 ----
