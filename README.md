@@ -29,7 +29,7 @@ Script.number;
 
 ----
 ## Metodos da class MonoBehaviour
-- **Awake**  <br>
+- **Awake**
 > Executa antes do carregamento da cena
 - **Start**  <br>
 > Executado apenas uma vez no inicio do cena, junto ao primeiro frame
