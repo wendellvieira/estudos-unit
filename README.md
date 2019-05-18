@@ -29,24 +29,41 @@ Script.number;
 
 ----
 ## Metodos da class MonoBehaviour
+### Metodos de Atualização do canvas
 - **Awake** <br>
   Executa antes do carregamento da cena
-- **Start**  
-> Executado apenas uma vez no inicio do cena, junto ao primeiro frame
-- **Update**  
-> Executado em todos os frames; Para Nomalizar usa-se Time.deltaTime
-- **FixedUpdate** 
-> ...
-- **OnTriggerEnter**  
-> Executado quanto entra em contato com algum colisor; <br>
-> Para funcionar o colizor deve estar com a opção "IsTrigger" marcada
-- **OnGUI** 
-> Criar botões na tela ????
+- **Start**  <br>
+Executado apenas uma vez no inicio do cena, junto ao primeiro frame
+- **Update**  <br>
+Executado em todos os frames; Para Nomalizar usa-se Time.deltaTime
+- **LateUpdate** <br>
+Executado após o update
+- **FixedUpdate** <br>
+Executada a uma taxa fixa de 30/1s independente da taxa de frames
+
+### Metodos de fisica
+- **OnTriggerEnter**  <br>
+Executado quanto entra em contato com algum colisor; <br>
+Para funcionar o colizor deve estar com a opção "IsTrigger" marcada <br>
+O objeto que vai colidir tem que ser Rigidbody <br>
+- **OnTriggerExit** <br>
+Executado quando sai do contato com o colisor
+### Metodos de manipulação de eventos
+- **OnMouseEnter** <br>
+Executa quando o mouse entra em contato (hover) com o objeto...
+- **OnMouseExit** <br>
+Executa quando o mouse sai do objeto...
+
+### Outros metodos
+- **OnGUI** <br>
+Criar botões na tela ????
 
 ----
 ## Components(class) da Unity...
 - **Camera** cria uma instancia de uma camera
 - **GameObject** Objeto agrupador da unity;
+- **BoxCollider** Objeto que cria uma area de colisão
+- **Rigidbody** Atribui comportamento fisico a um objeto
 
 
 ----
