@@ -14,6 +14,8 @@ public class Script {
 }
 Script.number;
 ```
+- Todos os script tem um objeto "gameObject" que refere-se ao gameObject local 
+- Os components tem um atributo chamado **enabled** que permite desabilitar o component
 ----
 
 ## Tipos de váriaveis 
@@ -73,5 +75,9 @@ Criar botões na tela ????
 Camera cam = GetComponent<Camera>();
 ```
 - **Time.deltaTime** retorna um delta relativo aos frames...
-
+- **isActiveAndEnabled** retorna true caso um componete eesteja ativado e habilitado...
 ----
+## Funções do gameObject
+- **gameObject.SetActive(bool)** define o status do gameObject pai...
+- **gameObject.activeInHierarchy** parametro que define o status do GO
+- **gameObject.activeSelf** define o status do GO baseado no __SetActive()__...
